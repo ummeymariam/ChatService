@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/Jquery-1.8.2.js"></script>
+    <script src="Scripts/socket.io.js"></script>
+    <script src="Scripts/default.js"></script>
+</head>
+<body>
+
+     <div class="userContainer">
+         <b>User:</b>
+         <div id="user"></div>
+     </div>
+    <div class="messageContainer">
+         Message : <input type="text" id="data" /><br/>
+          <button id="sendBtn"> send </button> <br/>
+          <div id="conversation"></div>
+    </div>
+
+    <style>
+
+        .userContainer {
+    float: left;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    border-right:5px solid red;
+}
+
+.messageContainer {
+    float: left;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    overflow: auto;
+}
+
+#data {
+    width: 230px;
+}
+
+
+    </style>
+
+</body>
+</html>
